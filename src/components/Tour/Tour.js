@@ -10,8 +10,10 @@ export default class Tour extends Component {
       <article className="tour">
         <div className="img-container">
           <img src={img} alt="image of the tour" />
-          <span className="close-btn"></span>
+          <span className="close-btn">
           <i className="fas fa-window-close"></i>
+          </span>
+
         </div>
 
         <div className="tour-info">
@@ -19,9 +21,9 @@ export default class Tour extends Component {
           <h4>{name}</h4>
           <h5>
             info{" "}
-            <spna>
+            <span>
               <i className="fas fa-caret-square-down"></i>
-            </spna>
+            </span>
           </h5>
           <p>{info}</p>
         </div>
