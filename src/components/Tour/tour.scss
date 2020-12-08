@@ -29,7 +29,7 @@
     display: block;
     top : 5%;
     right: 5%;
-    color : $mainGreen;
+    color : red;
     font-size: 1.5rem;
     cursor: pointer;
     opacity: 0;
@@ -59,6 +59,10 @@
             color: $mainGreen;
             margin: 0.5rem;
             font-size: 1.2rem;
+
+            i{
+                cursor: pointer;
+            }
 
         }
     }
