@@ -13,12 +13,13 @@ export default class TourList extends Component {
   };
 
   render() {
-    console.log(this.state.tours);
+    const { tours } = this.state;
     return (
-      <div>
-        <h2>Hello from Tourlist</h2>
-        <Tour></Tour>
-      </div>
+      <section className="tourList">
+        {tours.map((item) => (
+          <Tour key={item.id} tour={item} removeTour={this.removeTour}></Tour>
+        ))}
+      </section>
     );
   }
 }
