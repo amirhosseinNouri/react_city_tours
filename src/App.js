@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
-import './App.scss'
-
-
+import React, { Component } from "react";
+import "./App.scss";
+import Navbar from "./components/Navbar/Navbar";
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        This is my app
-      </div>
-    )
+      <>
+        <Navbar></Navbar>
+      </>
+    );
   }
 }
